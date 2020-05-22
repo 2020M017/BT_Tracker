@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     tools:context=".MainActivity">
-    
+
     <View
         android:id="@+id/titleBackground"
         android:layout_width="413dp"
@@ -35,14 +36,14 @@
         app:srcCompat="@android:drawable/btn_star" />
 
     <LinearLayout
-        android:layout_width="399dp"
-        android:layout_height="270dp"
+        android:layout_width="401dp"
+        android:layout_height="252dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleBackground"
-        app:layout_constraintVertical_bias="0.050000012">
+        app:layout_constraintVertical_bias="0.031">
 
         <TextView
             android:id="@+id/MainButton1"
@@ -58,7 +59,7 @@
             android:textColor="#FFFFFF" />
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,9 +72,16 @@
             android:layout_weight="1"
             android:background="#009688"
             android:onClick="goToNormalActivity"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:text="Check Normal Range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/MainButton3"
@@ -82,9 +90,16 @@
             android:layout_weight="1"
             android:background="#009688"
             android:onClick="goToMechanismActivity"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:text="Mechanism of Fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/MainButton4"
@@ -93,6 +108,8 @@
             android:layout_weight="1"
             android:background="#009688"
             android:onClick="goToLink2"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:text="Handling Fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
