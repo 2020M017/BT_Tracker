@@ -36,6 +36,7 @@
         app:srcCompat="@android:drawable/btn_star" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="401dp"
         android:layout_height="252dp"
         android:layout_marginTop="3dp"
@@ -123,5 +124,18 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/setReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setReminder"
+        android:text="@string/set_reminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.211" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
