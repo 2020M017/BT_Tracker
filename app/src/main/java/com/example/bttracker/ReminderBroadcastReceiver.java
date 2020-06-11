@@ -18,11 +18,10 @@ public class ReminderBroadcastReceiver extends BroadcastReceiver {
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         NotificationManager nm = (NotificationManager) context
                 .getSystemService(Context.NOTIFICATION_SERVICE);
-        Resources res = context.getResources();
         NotificationCompat.Builder builder = new
                 NotificationCompat.Builder(context, "BT_Tracker_Channel")
                 .setSmallIcon(R.mipmap.ic_launcher_round)
-                .setContentIntent(PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_CANCEL_CURRENT))
+                .setContentIntent(contentIntent)
                 .setContentTitle("Notification from BT Tracker")
                 .setContentText("Please log your body temperature now")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT) ;
